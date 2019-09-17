@@ -1,0 +1,53 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: true
+  disqus_shortname: 'millennial-3'
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-ID: 'UA-147524132-1'
+
+menu:
+- {name: '소프트웨어', folder: 'pages', file: 'software.html'}   #facts
+- {name: '과학', folder: 'pages', file: 'science.html'}    # resources
+- {name: '숫자가 말하는 현실', folder: 'pages', file: 'numbers.html'}   #sample-posts
+- {name: '저작&번역', folder: 'pages', file: 'writings.html'}  #documentation
+- {name: 'about', folder: 'pages', file: 'about.html'}
+- {name: 'contact', folder: 'pages', file: 'contact.html'}
+
+# 여기서부터는 submenu
+- {name: '운영체제', folder: 'category', file: 'os.html'}
+- {name: '웹사이트 만들기', folder: 'category', file: 'www.html'}
+- {name: '고등학교 수학', folder: 'category', file: 'math.html'} 
+- {name: '통계', folder: 'category', file: 'stats.html'} 
+- {name: '조사방법론', folder: 'category', file: 'analysis.html'} 
+- {name: '컴퓨터 비전', folder: 'category', file: 'vision.html'}
+- {name: '자연어 처리', folder: 'category', file: 'nlp.html'}
+- {name: '기업별 재무 분석', folder: 'category', file: 'finance.html'} 
+- {name: '기업 분석', folder: 'category', file: 'enterprise.html'}    
+- {name: '이슈 분석', folder: 'category', file: 'issue.html'} 
+- {name: '이번주 몰아보기', folder: 'category', file: 'weekly.html'}   
+- {name: '책 리뷰', folder: 'category', file: 'books.html'}
+- {name: '영화 리뷰', folder: 'category', file: 'movies.html'}  
+- {name: 'NeurlIPS 논문 번역', folder: 'category', file: 'NeurlIPS_trans.html'} 
+- {name: '딥러닝 관련글 번역', folder: 'category', file: 'deeplearning_trans.html'} 
+- {name: '머신러닝 관련글 번역', folder: 'category', file: 'machinelearning_trans.html'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+#- {icon: 'twitter', link: 'https://twitter.com/paululele'}
+#- {icon: 'facebook', link: 'https://www.facebook.com/Le.Paul.94'}
+- {icon: 'instagram', link: 'https://instagram.com'}  #인스타 계정 만들기
+- {icon: 'envelope', link: 'mailto:mj1310k11@gmail.com'}
+- {icon: 'rss-square', link: 'feed.xml'}
+# - {icon: 'rss-square', link: 'rss-feed.xml'}
+
+# Customize site text
+pagination:
+  next_page: '다음 글'
+  previous_page: '이전 글'
+
+sharing_button_prompt: '공유할 수 있답니다!'
+
+related_posts: '이 글도 읽어보실래요?'
+
+post_date_prefix: 'Written on'    

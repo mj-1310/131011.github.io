@@ -1,0 +1,179 @@
+.site-header {
+  min-height: 56px;
+  width: $container-width;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 5px 6px -6px #bbb;
+  z-index: 100;
+}
+@media (max-width: $container-width) {
+  .site-header {
+      min-height: 56px;
+      width: 95vw;
+      position: fixed;
+      background-color: white;
+      box-shadow: 0 5px 6px -6px #bbb;
+      z-index: 100;
+  }
+}
+.site-header a {
+  text-decoration: none;
+}
+.site-title {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 56px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 10px;
+  float: left;
+}
+
+/*<search button>*/
+.contact {
+  line-height: $header-thickness;
+  float: right;
+}
+.form-inline {
+  display: inline-block;
+}
+
+
+.menu-list {
+  line-height: $header-thickness;   
+  float: right;
+  height: 10px;
+}
+.menu-link {
+  padding: 5px 10px;
+}
+
+.menu-list ul {                /* remove ul, li list style */
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*added to the original for making dropdown menu*/
+
+/*<menu-item>*/
+
+.menu-list ul li {   
+  display: inline-block;
+  position: relative;                  /* to give <position: absolute> attribute to the child tag. to do this, submenu can align their location relatively appropriately */
+}
+.menu-list ul li a:hover {
+    color: #01A9DB;  
+    border-style: none none solid none;
+  }
+
+
+
+/*<submenu-list>*/
+
+.menu-list ul li div {                
+  display: none;                       /* nothing is to see unless cursor is on it */
+  position: absolute;
+  background-color: white;          /* submenu-list background color*/
+  min-width: 160px;                   /* submenu-list's background width*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 12px;
+  margin-top: -10px;
+}   
+
+.menu-list ul li div a {                   /* hide <a tag: dropdown function> in the submenu-list */
+      color: #2E2E2E;
+      padding: 12px 18px;
+      text-decoration: none;
+      border: none;
+      line-height: 13px; 
+      display: block;
+      float: none;                      /*make submenu-list vertical*/
+  }
+
+.menu-list ul li div a:hover {
+    background-color: #F2F2F2;
+    color: #01A9DB;  
+    border-style: none;
+  }
+
+
+ /*<menu-item & menu-item dropdown>*/ 
+ 
+.menu-list ul li:hover .submenu-list {      /* if cursor is on it(hover) submenu becomes unveiled*/
+      display: block;                       /* let submenu to dropdown when cursor is on it */ 
+      border-width: 0.01px;
+      border-color: #E6E6E6;
+      border-style: solid;
+  }
+
+/*added to the original for making dropdown menu*/  
+
+
+
+/*
+  Responsiveness with a dropdown menu
+*/
+
+@media (min-width: $container-width) {
+  .dropbtn {
+    display: none;
+  }
+  .dropdown-content {
+    display: none;
+  }
+}
+@media (max-width: $container-width) {
+  .menu-list {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .site-title {
+    padding-right: 0.25rem;
+  }
+  .dropbtn {
+      background-color: white;
+      color: black;
+      padding: 16px;
+      margin-top: 4px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  .dropdown-content a {
+      font-size: 8px;
+      color: black;
+      padding: 3px 15px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown-content a:hover {
+      background-color: #F2F2F2;
+      color: #01A9DB; 
+      border-width: 0.01px;
+      border-color: #E6E6E6;
+      border-style: solid;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .dropdown:hover .dropbtn {
+      background-color: #f1f1f1;
+  }
+}
