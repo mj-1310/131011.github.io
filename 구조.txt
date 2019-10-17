@@ -1,0 +1,121 @@
+<문서 확장자 종류>
+
+1. .yml : YAML 파일 포맷의 파일 확장자
+
+- YAML : e-mail 양식에서 개념을 딴 '사람이 쉽게 읽을 수 있는' 데이터 직렬화 양식
+- (CS)직렬화 : 메모리버퍼, 네트워크, 파일을 통해 전송되고 저장하는 데이터를 이용할 수 있는 상태로 재구성하는 것.
+- 직렬화(serialization) : 메모리의 객체를 디스크에 저장하거나, 네트워크를 통해 전송되는 형식으로 변환되는 작업. 데이터는 CSV, XML, JSON, YAML, binary 형식으로 다양하게 직렬화될 수 있음.
+- 역직렬화(deserialization) : 디스크에 저장된 데이터를 읽거나, 네트워크를 통해 전송된 데이터를 받아서 메모리에 재구축하는 작업
+- 직렬화 예 : A컴퓨터에서 구조체 데이터를 인터넷 너머의 B컴퓨터로 보낸다. 네트워크에서 데이터는 연속된 바이트의 흐름일 뿐이므로 구조체를 바이트 배열로 만들어야 하며 이 것이 직렬화.
+- 역직렬화: 직렬화된 데이터를 받은 측에서 사용하기 위해 다시 구조체로 만드는 작업
+-------------------------------------------------------------------------------------
+2. XML문서 : XML로 정의한(개발한) ML(markup language)으로 만든 문서. 구조화된 마크업언어
+
+- XML은 data를 관리하는 언어가 아닌 언어를 만드는 meta-언어
+- XML은 주로 다른 종류의 시스템, 특히 인터넷에 연결된 시스템끼리 데이터를 쉽게 주고받을 수 있게해 HTML의 한계를 극복할 목적으로 만들어짐
+- 지금은 임의의 자료구조를 나타내는 데 널리 쓰임. 예로 웹서비스
+- 구조 : 서두(Prolog), 엘리먼트(Element), 기타(Misc) 세부분으로 나눠짐
+-------------------------------------------------------------------------------------
+3. .md : 마크다운 문법으로 작성된 파일
+-------------------------------------------------------------------------------------
+
+<디렉토리 구조>
+
+4.
+Millennial/
+├── _data                      # Data files
+|  └── settings.yml            # Theme settings and custom text
+├── _includes                  # Theme includes
+├── _layouts                   # Theme layouts (see below for details)
+├── _posts                     # Where all your posts will go
+├── assets                     # Style sheets and images are found here
+|  ├── css                     # Style sheets go here
+|  |  └── _sass                # Folder containing SCSS files
+|  |  └── main.scss            # Main SCSS file
+|  |  └── syntax.css           # Style sheet for code syntax highlighting
+|  └── img                     # Images go here
+├── pages                      # Category pages
+├── _config.yml                # Site build settings
+├── Gemfile                    # Ruby Gemfile for managing Jekyll plugins
+├── index.md                   # Home page
+├── LICENSE.md                 # License for this theme
+├── README.md                  # Includes all of the documentation for this theme
+└── rss-feed.xml               # Generates RSS 2.0 file which Jekyll points to
+
+-------------------------------------------------------------------------------------
+
+5. rss : Rich Site Summary. 콘텐츠 표현 방식
+
+- 어떤 사이트에 새로운 콘텐츠가 올라왔을 때 해당 사이트에 방문하지 않고, RSS서비스를 통해 리더 한 곳에서 그 콘텐츠를 이용하기 위한 방법.
+- RSS리더에는 웹기반형과 설치형이 있음. 웹기반형 리더는 간단한 계정으로 어디에서든 이용 가능.
+- RSS를 이용해서 팟캐스트도 음성이나 영상을 배포
+- 사용방법 : RSS를 구독하기 위해서는 RSS리더가 필요. 
+	   RSS리더는 웹 기반과 응용프로그램 기반으로 나뉨. 
+	   RSS리더가 준비되면 블로그나 사이트에서 RSS라는 글자가 들어간 텍스트나 이미지를 누르면 RSS피드 주소로 이동되고, (예: https://mj-1310.github.io/feed.xml)
+	   이 주소를 해당 RSS리더에 추가 버튼 등을 눌러 넣으면 됨.
+	   RSS피드는 새 기사들의 제목 혹은 새 기사들 전체를 뽑아서 하나의 파일로 만들어 놓은 것
+- RSS피드는 XML 기반의 표준(XML 파일로 되어 있음)
+-------------------------------------------------------------------------------------
+
+6. _config.yml : 사이트 전체 페이지 설정
+
+- 한페이지에서 보여지는 다른 페이지 개수
+- sass 스타일시트 경로 설정 
+- title, description, author 설정
+- sass : 종속형 시트(CSS)로 해석 및 컴파일되는 스크립트 언어
+-------------------------------------------------------------------------------------
+7. settings.yml
+ 
+- disqus : 소셜 댓글 서비스. 다른 사람들이 내 블로그에 댓글 달 수 있음.
+- disqus_shortname : disqus account의 username으로 사용. 이를통해 jekyll과 disqus연동
+-------------------------------------------------------------------------------------
+8,. SASS : CSS pre-processor로서 CSS의 한계와 단점을 보완하여, 보다 가독성 높고 코드의 재사용에 유리한 CSS를 생성하기 위한 CSS의 확장.
+
+- SCSS = SASS + CSS. SASS 컴파일러로 SCSS 파일이 CSS 파일이 됨
+- SCSS의 기본틀은 CSS 문법과 동일. nested block(네스팅)을 적용
+- nesting : 서브루틴 중에 달느 서브루틴을 짜 넣는 것
+- SASS가 제공하는 추가기능과 도구 : 변수의 사용/조건문과 반복문/Import/Nesting/Mixin/Extend/Inheritance
+- @import : 지시어로 다른 CSS 파일 임포트 가능
+-------------------------------------------------------------------------------------
+9. 메뉴 목록 변경하기 위해 수정할 문서 
+
+- _data/settings.yml : menu 내용 수정 - name으로 메뉴명 수정 / file로 html파일명 수정
+- _includes/header : menu 내용 수정 - 태그 속 콘텐츠 내용에서 메뉴명 수정. / href 태그에서 템플릿 변수로 링크 받음
+- assets/css/_sass : css 내용 수정
+pages 폴더 : 상위메뉴 수정 시 html 문서 수정
+category 폴더 : 하위메뉴 수정 시 html 문서 수정
+- 링크(파일)명 수정 시 : /pages, /category 경로의 html 문서 수정 -> /_posts 경로의 파일명 수정 -> /_data/settings.yml의 file 수정 -> 상위메뉴 수정할 경우 /_includes/header.html의 <li class="menu-item dropdown"><a ~~ href> 의 href 속성 수정 -> /category/-.html의 {% %}속 템플릿 변수 수정 -> /_posts/-.md의 categories 수정
+- 메뉴명 수정시 : /_data/settings.yml의 name 수정 -> /_includes/header.html의 태그 속 콘텐츠 수정 -> -> /_posts/-.html의 title 명 수정
+
+-------------------------------------------------------------------------------------
+10. _includes : disqus / footer / google-analytics / head / header 의 템플릿
+
+- Django : 파이썬의 웹 어플리케이션 프레임워크. 
+- Django App : Django에서 사용하는 "파이썬 패키지". Django App 패키지는 그 안에 자신의 model, view, template, URL 매핑을 독자적으로 가짐. 
+- Django View : 필요한 데이터를 모델(혹은 외부)에서 가져와서 적절히 가공하여 웹페이지 결과를 만들도록 컨트롤하는 역할.
+- View 들은 Django App 안의 views.py 파일에 정의하고, 각 함수가 하나의 View를 정의. 각 View는 HTTP Request를 입력 파라미터로 받아들이고, HTTP Response를 리턴.
+- 하나의 View 함수 표현에 대한 예 : 
+	from django.http import HttpResponse
+	    def index(request):
+    	return HttpResponse("<h1>Hello, World!</h1>")
+- Django의 MTV 패턴 : Model, Template, View. 
+- Model : 데이터를 표현하는데 사용됨. 하나의 모델 클래스는 DB에서 하나의 테이블로 표현됨.
+- View : HTTP Request를 받아 그 결과인 HTTP Response를 리턴하는 컴포넌트. Model로부터 데이터를 읽거나 저장할 수 있으며, Template을 호출해 데이터를 UI상에 표현하도록 함.
+- Template : View로부터 전달된 데이터를 템플릿에 적용, dynamic한 웹페이지 만드는데 사용. Presentation Logic 만을 갖는데 HTML 파일 만드는 컴포넌트
+- Django의 Template에서 {{ 변수명 }} : View 함수에서 해당 변수의 값을 그 자리에 치환하라는 의미
+- Django템플릿 언어 중 템플릿 변수 : {{ 변수명 }}. 변수의 값은 해당 위치에 치환됨. 점(.)을 찍어 primitive 데이터를 갖는 변수 혹은 객체의 속성 등을 넣을 수 있음 
+- {{ }}와 {% %} : DJango의 템플릿 언어
+	{% if 조건1 %}
+	    조건1이 참인 경우 실행할 명령
+	{% elif 조건2 %}
+	    조건2가 참인 경우 실행할 명령
+	{% else %}
+	    모든 조건이 거짓인 경우 실행할 명령
+	{% endif %}
+
+
+직렬화라는 건 변역작업인가?
+
+conda install pytorch-cpu -c python
+conda install torchvision-cpu -c python
+{{ url_for('static', filename=video_path) }}

@@ -61,6 +61,21 @@ Millennial/
 └── rss-feed.xml               # Generates RSS 2.0 file which Jekyll points to
 ```
 
+```
+* 링크(파일)명 수정 시 : 
+[/pages], [/category] 경로의 [html 문서] 수정 
+-> [/_posts] 경로의 [폴더명] 수정 
+-> [/_data/settings.yml]의 [file] 수정 
+-> 상위메뉴 수정할 경우 [/_includes/header.html]의 <li class="menu-item dropdown"><a - href> 의 [href 속성] 수정 
+-> [/category/-.html]의 [{% %}속 템플릿 변수] 수정 
+-> [/_posts/-.md]의 [categories] 수정
+
+* 메뉴명 수정시 : 
+[/_data/settings.yml]의 [name] 수정 
+-> [/_includes/header.html]의 [태그 속 콘텐츠] 수정 
+-> [/_posts/-.html]의 [title] 수정
+```
+
 ### 6. Table of Contents
 
 1. [Introduction](#introduction)

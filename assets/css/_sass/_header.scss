@@ -29,7 +29,7 @@
   float: left;
 }
 
-/*<search button>*/
+/****************<search button>******************/
 .contact {
   line-height: $header-thickness;
   float: right;
@@ -57,7 +57,7 @@
 
 /*added to the original for making dropdown menu*/
 
-/*<menu-item>*/
+/*********************<menu-item>************************/
 
 .menu-list ul li {   
   display: inline-block;
@@ -70,7 +70,7 @@
 
 
 
-/*<submenu-list>*/
+/**********************<submenu-list>************************/
 
 .menu-list ul li div {                
   display: none;                       /* nothing is to see unless cursor is on it */
@@ -100,7 +100,7 @@
   }
 
 
- /*<menu-item & menu-item dropdown>*/ 
+ /************<menu-item & menu-item dropdown>***********************/ 
  
 .menu-list ul li:hover .submenu-list {      /* if cursor is on it(hover) submenu becomes unveiled*/
       display: block;                       /* let submenu to dropdown when cursor is on it */ 

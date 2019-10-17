@@ -3,67 +3,58 @@
     <h3 class="site-title">
       <a href="{{ site.github.url }}/">{{ site.title }}</a>
     </h3>
-
+<!--
     <nav class="contact">
       <form class="form-inline">
         <input class="form-control" type="text" placeholder="태그 검색(준비중)">
         <button class="btn btn-success" type="submit">찾기</button>
       </form>
 
-<!--
       {% for item in site.data.settings.social %}
         <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
       {% endfor %}
--->
-    </nav>
-  </div>
 
-  <!--<nav class="menu-list">
-    {% for item in site.data.settings.menu %}
-        <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="menu-link">{{ item.name }}</a>
-    {% endfor %}-->
+    </nav>
+-->
+  </div>
 
 <!--added to the original for making dropdown menu-->
   <nav class="menu-list">   <!--menu-list <-> dropdown-->
     <ul class="navbar-nav">
 
       <li class="menu-item dropdown">  
-        <a class="menu-link dropdown-toggle" href="{{ site.github.url }}/pages/software.html" data-toggle="dropdown">소프트웨어</a>
+        <a class="menu-link dropdown-toggle" href="{{ site.github.url }}/pages/software.html" data-toggle="dropdown">환경설정</a>
         <div class="submenu-list">   <!--submenu-list <-> dropdown-content-->
-            <a class="submenu-link" href="{{ site.github.url }}/category/os.html">운영체제</a>  <!--submenu-list에 a 태그를 숨겨서 커서 위치하면 dropdown 되도록 함 -->
-            <a class="submenu-link" href="{{ site.github.url }}/category/www.html">웹사이트 만들기</a> 
+          {% for item in site.data.settings.software_menu %}
+              <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="submenu-link">{{ item.name }}</a>
+          {% endfor %}
         </div>
       </li>
 
       <li class="menu-item dropdown">  
         <a href="{{ site.github.url }}/pages/science.html" class="menu-link dropdown-toggle" data-toggle="dropdown">과학</a>
         <div class="submenu-list">
-            <a class="submenu-link" href="{{ site.github.url }}/category/math.html">고등학교 수학</a> 
-            <a class="submenu-link" href="{{ site.github.url }}/category/stats.html">통계</a> 
-            <a class="submenu-link" href="{{ site.github.url }}/category/analysis.html">조사방법론</a> 
-            <a class="submenu-link" href="{{ site.github.url }}/category/vision.html">컴퓨터 비전</a>
-            <a class="submenu-link" href="{{ site.github.url }}/category/nlp.html">자연어 처리</a>  
+          {% for item in site.data.settings.science_menu %}
+              <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="submenu-link">{{ item.name }}</a>
+          {% endfor %}
         </div>
       </li>
 
       <li class="menu-item dropdown">
         <a href="{{ site.github.url }}/pages/numbers.html" class="menu-link dropdown-toggle" data-toggle="dropdown">숫자가 말하는 현실</a>
         <div class="submenu-list">
-            <a class="submenu-link" href="{{ site.github.url }}/category/finance.html">기업별 재무 분석</a>
-            <a class="submenu-link" href="{{ site.github.url }}/category/enterprise.html">기업 분석</a> 
-            <a class="submenu-link" href="{{ site.github.url }}/category/issue.html">이슈 분석</a>
-            <a class="submenu-link" href="{{ site.github.url }}/category/weekly.html">이번주 몰아보기</a>
+          {% for item in site.data.settings.numbers_menu %}
+              <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="submenu-link">{{ item.name }}</a>
+          {% endfor %}
         </div>
       </li>
 
       <li class="menu-item dropdown">
         <a href="{{ site.github.url }}/pages/writings.html" class="menu-link dropdown-toggle" data-toggle="dropdown">저작&번역</a>
         <div class="submenu-list">
-            <a class="submenu-link" href="{{ site.github.url }}/category/books.html">책 리뷰</a> 
-            <a class="submenu-link" href="{{ site.github.url }}/category/movies.html">영화 리뷰</a> 
-            <a class="submenu-link" href="{{ site.github.url }}/category/NeurlIPS_trans.html">NeurlIPS 논문 번역</a>
-            <a class="submenu-link" href="{{ site.github.url }}/category/deeplearning_trans.html">딥러닝 관련글 번역</a>
-            <a class="submenu-link" href="{{ site.github.url }}/category/machinelearning_trans.html">머신러닝 관련글 번역</a>  
+          {% for item in site.data.settings.writings_menu %}
+              <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="submenu-link">{{ item.name }}</a>
+          {% endfor %}
         </div>
       </li>
 

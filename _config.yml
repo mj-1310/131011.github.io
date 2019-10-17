@@ -1,7 +1,7 @@
 # Site Build Settings
 
 # jekyll-paginate configuration
-paginate:            5
+paginate:            5    # paginate 뜻: 페이지 매김. 한 페이지에서 볼 수 있는 링크 수
 
 # Build settings
 markdown:            kramdown
