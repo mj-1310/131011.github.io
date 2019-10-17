@@ -77,17 +77,6 @@ Millennial/
 - SASS가 제공하는 추가기능과 도구 : 변수의 사용/조건문과 반복문/Import/Nesting/Mixin/Extend/Inheritance
 - @import : 지시어로 다른 CSS 파일 임포트 가능
 -------------------------------------------------------------------------------------
-9. 메뉴 목록 변경하기 위해 수정할 문서 
-
-- _data/settings.yml : menu 내용 수정 - name으로 메뉴명 수정 / file로 html파일명 수정
-- _includes/header : menu 내용 수정 - 태그 속 콘텐츠 내용에서 메뉴명 수정. / href 태그에서 템플릿 변수로 링크 받음
-- assets/css/_sass : css 내용 수정
-pages 폴더 : 상위메뉴 수정 시 html 문서 수정
-category 폴더 : 하위메뉴 수정 시 html 문서 수정
-- 링크(파일)명 수정 시 : /pages, /category 경로의 html 문서 수정 -> /_posts 경로의 파일명 수정 -> /_data/settings.yml의 file 수정 -> 상위메뉴 수정할 경우 /_includes/header.html의 <li class="menu-item dropdown"><a ~~ href> 의 href 속성 수정 -> /category/-.html의 {% %}속 템플릿 변수 수정 -> /_posts/-.md의 categories 수정
-- 메뉴명 수정시 : /_data/settings.yml의 name 수정 -> /_includes/header.html의 태그 속 콘텐츠 수정 -> -> /_posts/-.html의 title 명 수정
-
--------------------------------------------------------------------------------------
 10. _includes : disqus / footer / google-analytics / head / header 의 템플릿
 
 - Django : 파이썬의 웹 어플리케이션 프레임워크. 
@@ -112,6 +101,8 @@ category 폴더 : 하위메뉴 수정 시 html 문서 수정
 	{% else %}
 	    모든 조건이 거짓인 경우 실행할 명령
 	{% endif %}
+-------------------------------------------------------------------------------------
+11. _layouts : default, home, misc, page, post 의 템플릿
 
 
 직렬화라는 건 변역작업인가?
