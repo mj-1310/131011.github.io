@@ -20,7 +20,7 @@ computer_menu:  # category 폴더 속 html파일
 science_menu:  # category 폴더 속 html파일
 - {name: '고등학교 수학', folder: 'category', file: 'highschool_math.html'} 
 - {name: '통계', folder: 'category', file: 'stats.html'} 
-- {name: '조사방법론', folder: 'category', file: 'analysis.html'} 
+- {name: '통계 분석 기법', folder: 'category', file: 'statistical_method.html'} 
 - {name: '컴퓨터 비전', folder: 'category', file: 'vision.html'}
 - {name: '자연어 처리', folder: 'category', file: 'nlp.html'}
 numbers_menu:  # category 폴더 속 html파일
