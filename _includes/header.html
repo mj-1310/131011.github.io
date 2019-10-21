@@ -23,9 +23,9 @@
     <ul class="navbar-nav">
 
       <li class="menu-item dropdown">  
-        <a class="menu-link dropdown-toggle" href="{{ site.github.url }}/pages/software.html" data-toggle="dropdown">환경설정</a>
+        <a class="menu-link dropdown-toggle" href="{{ site.github.url }}/pages/computer.html" data-toggle="dropdown">컴퓨터</a>
         <div class="submenu-list">   <!--submenu-list <-> dropdown-content-->
-          {% for item in site.data.settings.software_menu %}
+          {% for item in site.data.settings.computer_menu %}
               <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="submenu-link">{{ item.name }}</a>
           {% endfor %}
         </div>

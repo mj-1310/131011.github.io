@@ -104,9 +104,8 @@ Millennial/
 -------------------------------------------------------------------------------------
 11. _layouts : default, home, misc, page, post 의 템플릿
 
-
+--------------------------------------------------------------------------
 직렬화라는 건 변역작업인가?
 
-conda install pytorch-cpu -c python
-conda install torchvision-cpu -c python
+
 {{ url_for('static', filename=video_path) }}

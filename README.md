@@ -64,16 +64,19 @@ Millennial/
 ```
 * 링크(파일)명 수정 시 : 
 [/pages], [/category] 경로의 [html 문서] 수정 
+-> 상위메뉴 수정할 경우 [/_pages/-.html]의 [{% %}속 템플릿 변수] 수정
+-> 하위메뉴 수정할 경우 [/category/-.html]의 [{% %}속 템플릿 변수] 수정 
 -> [/_posts] 경로의 [폴더명] 수정 
 -> [/_data/settings.yml]의 [file] 수정 
--> 상위메뉴 수정할 경우 [/_includes/header.html]의 <li class="menu-item dropdown"><a - href> 의 [href 속성] 수정 
--> [/category/-.html]의 [{% %}속 템플릿 변수] 수정 
+-> 상위메뉴 수정할 경우 [/_includes/header.html]의 <li class="menu-item dropdown"><a - href> 의 [href 속성] 수정
 -> [/_posts/-.md]의 [categories] 수정
 
 * 메뉴명 수정시 : 
 [/_data/settings.yml]의 [name] 수정 
 -> [/_includes/header.html]의 [태그 속 콘텐츠] 수정 
 -> [/_posts/-.html]의 [title] 수정
+-> 상위메뉴 수정할 경우 [/pages/-.html]의 title 수정
+-> 하위메뉴 수정할 경우 [/category/-.html]의 title 수정
 ```
 
 ### 6. Table of Contents
@@ -111,4 +114,8 @@ Millennial/
 ### 7. License
 
 Open sourced under the [MIT license](https://github.com/LeNPaul/Millennial/blob/gh-pages/LICENSE.md).
+
+### 8. 블로그 작성 참고 사항
+
+태그는 모두 소문자
 

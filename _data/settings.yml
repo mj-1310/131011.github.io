@@ -7,14 +7,14 @@ disqus:
 google-ID: 'UA-147524132-1'
 
 menu: # name: 블로그에서 보여지는 메뉴명   # file: pages 폴더 속 html파일명
-- {name: '환경설정', folder: 'pages', file: 'software.html'}   #facts
+- {name: '컴퓨터', folder: 'pages', file: 'computer.html'}   #facts
 - {name: '과학', folder: 'pages', file: 'science.html'}    # resources
 - {name: '숫자가 말하는 현실', folder: 'pages', file: 'numbers.html'}   #sample-posts
 - {name: '저작&번역', folder: 'pages', file: 'writings.html'}  #documentation
 - {name: 'about', folder: 'pages', file: 'about.html'}
 - {name: 'contact', folder: 'pages', file: 'contact.html'}
 
-software_menu:  # category 폴더 속 html파일
+computer_menu:  # category 폴더 속 html파일
 - {name: '운영체제', folder: 'category', file: 'os.html'}
 - {name: '웹사이트 만들기', folder: 'category', file: 'www.html'}
 science_menu:  # category 폴더 속 html파일
