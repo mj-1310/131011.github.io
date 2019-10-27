@@ -1,0 +1,8 @@
+---
+layout: post
+title: "머신러닝 25. 지도학습: 시계열 분석 (자기회귀이동평균)"
+author: "MJ"
+categories: [science, statistical_method]
+tags: [statistics, machinelearning, multicampus, bigdata_analysis_edu, CRT]
+image: 
+---
