@@ -11,7 +11,7 @@ image:
 &nbsp; &nbsp; **목차**<br>
 &nbsp; &nbsp; 1. [통계는 어떻게 현실 문제를 해결하고 머신러닝은 또 뭘까?](#1)<br>
 &nbsp; &nbsp; 2. [머신러닝 기법의 종류?](#2)<br>
-&nbsp; &nbsp; 참고. [참고: 몇가지 용어 정리](#3)
+&nbsp; &nbsp; 참고: [몇가지 용어 정리](#3)
 ---
 <br>
 
@@ -89,7 +89,7 @@ GNT: Grouping & Networking | Clustering(K-means, Hierarchical), PCA, FA 등등
 
 <br>
 
-* 관찰치 = record = 행
+* 관찰치 = record = 행 = 사례(케이스)
 * 변수 = 컬럼 = 열
 
 <br>
