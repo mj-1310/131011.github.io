@@ -76,6 +76,15 @@ GNT: Grouping & Networking | Clustering(K-means, Hierarchical), PCA, FA 등등
 
 <br><br>
 
+
+* 예측변수 = 독립변수
+* 반응변수 = 종속변수
+* 성과변수 = KPI (Key Performance Index)
+
+
+<br><br>
+
+
 ###### <참고 문헌> 
 <br>
 1. 최점기 박사님과 그분의 ppt <br>
