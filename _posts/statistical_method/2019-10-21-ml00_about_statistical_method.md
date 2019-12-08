@@ -59,7 +59,7 @@ image:
 
 <br><br>
 
-![screenshot]({{site.baseurl}}/assets/statistical_method/2019-10-21_about_statistical_method_2.png)
+![screenshot]({{site.baseurl}}/assets/statistical_method/2019-10-21_about_statistical_method_2.jpg)
 
 <br><br>
 
@@ -82,7 +82,7 @@ image:
 
 <br><br>
 
-![screenshot](http://mj-1310/mj-1310.github.io/assets/statistical_method/2019-10-21_about_statistical_method_3.png)
+![screenshot]({{site.baseurl}}/assets/statistical_method/2019-10-21_about_statistical_method_3.jpg)
 
 <br><br>
 
