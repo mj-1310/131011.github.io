@@ -51,7 +51,7 @@ image:
 
 <br><br>
 
-![screenshot]({{site.url}}/assets/statistical_method/2019-10-21_about_statistical_method_1.png)
+![screenshot]({{site.baseurl}}/assets/statistical_method/2019-10-21_about_statistical_method_1.png)
 
 <br><br>
 
