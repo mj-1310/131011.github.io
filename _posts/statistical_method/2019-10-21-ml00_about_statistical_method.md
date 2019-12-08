@@ -59,7 +59,7 @@ image:
 
 <br><br>
 
-![screenshot]({{site.url}}/assets/statistical_method/2019-10-21_about_statistical_method_2.png)
+![screenshot]({{"/assets/statistical_method/2019-10-21_about_statistical_method_2.png"| relative_url}})
 
 <br><br>
 
