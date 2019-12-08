@@ -51,7 +51,7 @@ image:
 
 <br><br>
 
-![screenshot](./img/2019-10-21_about_statistical_method_1.png)
+![screenshot]({{site.url}}/assets/statistical_method/2019-10-21_about_statistical_method_1.png)
 
 <br><br>
 
@@ -59,7 +59,7 @@ image:
 
 <br><br>
 
-![screenshot](./img/2019-10-21_about_statistical_method_2.jpg)
+![screenshot]({{site.url}}/assets/statistical_method/2019-10-21_about_statistical_method_2.png)
 <br><br>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
@@ -83,7 +83,7 @@ image:
 
 <br><br>
 
-![screenshot](./img/2019-10-21_about_statistical_method_3.jpg)
+![screenshot]({{site.url}}/assets/statistical_method/2019-10-21_about_statistical_method_3.png)
 
 <br><br>
 
